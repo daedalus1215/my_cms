@@ -1,0 +1,18 @@
+<section>
+  <article>
+    <h3>Buffering output</h3>
+    <p>
+      Increasing and allowing buffering on the server, increases the time allowed in a delay. We increase it inside the <em>php.ini</em> file, <code>output_buffering=4096</code> and we can check it in the <code>phpinfo()</code>. 
+    </p>
+    <p>
+      To change or start the buffering process, programmatically, we would use a function:
+      <?php 
+        ob_start();
+      ?>
+      We always use that function at the top of the page, that way we can use a header function:
+      <?php 
+        header("Location: index.php");
+      ?>
+    </p>
+  </article>
+</section>

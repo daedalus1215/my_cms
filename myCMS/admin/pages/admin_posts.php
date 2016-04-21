@@ -1,0 +1,47 @@
+
+    <div id="wrapper">
+      <!-- All admin pages need to set this value, so the sidebar knows which one to select, based off of where the user is currently. -->
+        <?php $current_location = "admin_posts_view"; ?>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Welcome to admin
+                            <small>Author</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-file"></i> Posts
+                            </li>
+                        </ol>
+                    </div>
+                </div> <!-- /.row -->
+                <?php 
+                    $debug_stop = "";
+                    (isset($_GET['source'])) ? $source = $_GET['source'] : $source = '';
+                    
+                    switch ($source) {
+                        case 'add_post':
+                            include "includes/view_add_post.php";
+                            break;
+                        case 'view_edit_posts':
+                            include "includes/view_edit_posts.php";
+                            break;
+                        case 'view_all_posts':
+                            include "includes/view_all_posts.php";
+                            break;
+                        default:
+                            include "includes/view_all_posts.php";
+                            break;
+                    }
+                ?>
+                
+            </div> <!-- /.container-fluid -->
+        </div> <!-- /#page-wrapper -->
+    </div> <!-- /#wrapper -->
+  <?php include "includes/admin_footer.php"; ?>

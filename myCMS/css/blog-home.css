@@ -1,0 +1,71 @@
+/*!
+ * Start Bootstrap - Blog Home HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+img.img-responsive {
+    width: 900px;
+    height: 300px;
+    background-repeat: no-repeat;
+    
+}
+
+p.wrap-text {
+    word-wrap: break-word;
+}
+
+
+/* COMMENT FORM attached to all individual posts.*/
+.form-wrapper {
+    background-color: #e5e5e5;
+    padding: 10px 20px 5px;
+    border-radius: 1px;
+}
+span.comment-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+button.comment-btn {
+    margin: 15px 0 18px 2px;
+}
+
+/* COMMENTS */
+div.comments-wrapper {
+  margin: 30px 0;  
+}
+div.comment-text-wrapper {
+  vertical-align: middle;
+  padding-top: 5px;
+}
+span.comment-author {
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+span.comment-date {
+  text-align: center;
+  margin-left: 5px;
+  font-weight: 100;
+  font-size: 12px;
+  color: #797979;
+}
+
+span.comment-content {
+    margin-left: 5px;
+}
+
+div.image {
+  width: 64px; 
+  height: 64px; 
+  float: left;
+  background-color: #a4a4a4;
+}
